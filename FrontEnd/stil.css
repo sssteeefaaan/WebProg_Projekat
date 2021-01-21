@@ -1,0 +1,107 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.Turnir{
+    display:flex;
+    flex-direction:column;
+
+    background-color: beige;
+    border:1px solid black;
+    margin: 5px;
+}
+
+.TurnirHeaderDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+}
+
+.TurnirHeader{
+    display:flex;
+    flex:1 1 100%;
+}
+
+.TurnirHeaderButton{
+    display:flex;
+}
+
+.TurnirUnos{
+    display:flex;
+    flex-direction: row;
+    border-top: 1px solid black;
+    padding: 5px;
+    height: 25vh;
+}
+
+.TurnirUnosDiscipline, .TurnirUnosUcesnika{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1 1 20%;
+    padding: 5px;
+    border: 1px dashed black;
+    margin: 5px;
+    overflow: auto;
+}
+
+.TurnirPrikazDisciplina{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    width: 100%;
+    margin: 5px;
+    border: 1px dashed black;
+}
+
+.Disciplina{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    height:fit-content;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.HeaderDiscipline{
+    display:flex;
+    justify-content: flex-start;
+}
+
+.KontrolaDiscipline{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.UcesnikRed{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    border: 2px solid black;
+    padding: 2px;
+    margin: 1px;
+}
+
+.Ucesnik{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    justify-content: center;
+    width: 5vw;
+    height: 5vw;
+    margin: 2px;
+}
+
+.Turnir h3{
+    align-self: center;
+}
+
+.Turnir button{
+    margin:1px;
+}
