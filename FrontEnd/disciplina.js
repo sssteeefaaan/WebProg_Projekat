@@ -198,7 +198,8 @@ export class Disciplina
     {
         this.ucesniciContainer.style.backgroundColor = col[0];
         this.ucesnici.forEach(el => el.nacrtajUcesnika(this.ucesniciContainer));
-        hostUcesnici.appendChild(this.ucesniciContainer);
+        //hostUcesnici.appendChild(this.ucesniciContainer);
+        hostUcesnici.insertBefore(this.ucesniciContainer, hostUcesnici.firstChild);
 
         // Nije najefikasnije odrađeneno, pogotovo što se konstantno zove,
         // Bolji prilaz bi bio Observer

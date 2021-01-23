@@ -1,23 +1,44 @@
 body{
     display: flex;
     flex-direction: column;
+    background-color: #283747;
 }
 
 .Turnir{
     display:flex;
     flex-direction:column;
 
-    background-color: beige;
-    border:1px solid black;
-    margin: 5px;
+    background-color: #DCE1E3;
+    border: 1px solid black;
+    margin: 0.2vw;
+}
+
+.Turnir button{
+    background-color:#283747;
+    color:#DCE1E3;
+    border:0;
+    box-shadow: none;
+    border-radius: 5px;
+    margin: 0.2vw;
+    padding: 0.3vw;
+    font-size: 1vw;
+}
+
+.Turnir h2{
+    font-size: 2vw;
+}
+
+.Turnir h3{
+    align-self: center;
+    font-size: 1.5vw;
 }
 
 .TurnirHeaderDiv{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5px;
-    margin: 5px;
+    margin: 0.2vw;
+    padding: 0.3vw;
 }
 
 .TurnirHeader{
@@ -27,25 +48,39 @@ body{
 
 .TurnirHeaderButton{
     display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TurnirHeaderButton>button{
+    border-radius: 15px;
+    padding: 1vw;
+    font-size:1.2vw;
 }
 
 .TurnirUnos{
     display:flex;
     flex-direction: row;
     border-top: 1px solid black;
-    padding: 5px;
-    height: 25vh;
+    padding: 0.3vw;
+    height: 15vw;
 }
 
 .TurnirUnosDiscipline, .TurnirUnosUcesnika{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     flex:1 1 20%;
-    padding: 5px;
     border: 1px dashed black;
-    margin: 5px;
+    margin: 0.2vw;
+    padding: 0.3vw;
     overflow: auto;
+    justify-content: space-evenly;
+}
+
+.TurnirUnosDiscipline *:not(h3), .TurnirUnosUcesnika *:not(h3){
+    margin: 0.1vw;
+    padding: 0.15vw;
+    font-size: 1vw;
 }
 
 .TurnirPrikazDisciplina{
@@ -53,7 +88,7 @@ body{
     flex-direction: column;
     overflow-y: auto;
     width: 100%;
-    margin: 5px;
+    margin: 0.2vw;
     border: 1px dashed black;
 }
 
@@ -61,10 +96,12 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5px;
+    align-items:center;
+    padding: 0.3vw;
     height:fit-content;
     border: 1px solid black;
     border-collapse: collapse;
+    font-size: 1.1vw;
 }
 
 .HeaderDiscipline{
@@ -83,8 +120,8 @@ body{
     flex-direction: column;
     flex: 1 1 100%;
     border: 2px solid black;
-    padding: 2px;
-    margin: 1px;
+    margin: 0.2vw;
+    padding: 0.3vw;
 }
 
 .Ucesnik{
@@ -98,10 +135,6 @@ body{
     margin: 2px;
 }
 
-.Turnir h3{
-    align-self: center;
-}
-
-.Turnir button{
-    margin:1px;
+.Ucesnik>label{
+    font-size: 1.2vw;
 }
