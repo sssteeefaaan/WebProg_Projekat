@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nGaeaaB6v30CF4ujXb9FGK0fzaYpIREXc4haXy8Hy8E0DjHK4dqzec2AZHiCp5PLp711ugB3gi3Wpsd9bOKCgQ==",
+  "dgSpecHash": "otRTzgprbgUPnVU1m65/V+KqXS6oX7IDb8iIvSf/0MDr31RO7ORmgmeuGYaNOsRwlZ/BkqrIt06gK+CJ3qRIrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Server.csproj",
+  "projectFilePath": "C:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\stefa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.1\\microsoft.aspnetcore.authentication.jwtbearer.5.0.1.nupkg.sha512",

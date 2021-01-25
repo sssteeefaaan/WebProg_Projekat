@@ -77,9 +77,11 @@ export class Ucesnik
     {
         if (this.compete || broj == 0) {
             this.rang = broj;
-            // Update View
-            this.contestant.querySelector(".Rang").innerHTML = broj;
-            //
+
+            if (broj > 0)
+                this.contestant.querySelector(".Rang").innerHTML = broj;
+            else
+                this.contestant.querySelector(".Rang").innerHTML = "";
         }
     }
 

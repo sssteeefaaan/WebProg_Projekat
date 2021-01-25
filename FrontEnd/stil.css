@@ -4,6 +4,34 @@ body{
     background-color: #283747;
 }
 
+.PopUp{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    background-color:  #DCE1E3;
+    transform: translate(-50%, -50%);
+}
+
+.PopUpBackground{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color:#283747;
+}
+
+.closeButton{
+    position:absolute;
+    top:0;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 0.1vw;
+    width: 8%;
+    height: 8%;
+}
+
 .Turnir{
     display:flex;
     flex-direction:column;
@@ -69,18 +97,21 @@ body{
 .TurnirUnosDiscipline, .TurnirUnosUcesnika{
     display: flex;
     flex-direction: column;
-    flex:1 1 20%;
-    border: 1px dashed black;
-    margin: 0.2vw;
-    padding: 0.3vw;
-    overflow: auto;
-    justify-content: space-evenly;
+    margin: .5vw;
+    padding: .5vw;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid darkblue;
 }
 
 .TurnirUnosDiscipline *:not(h3), .TurnirUnosUcesnika *:not(h3){
-    margin: 0.1vw;
-    padding: 0.15vw;
+    margin: 0.5vw;
+    padding: 0.2vw;
     font-size: 1vw;
+}
+
+.TurnirUnosDiscipline h3, .TurnirUnosUcesnika h3{
+    font-size: 1.5vw;
 }
 
 .TurnirPrikazDisciplina{
@@ -89,7 +120,6 @@ body{
     overflow-y: auto;
     width: 100%;
     margin: 0.2vw;
-    border: 1px dashed black;
 }
 
 .Disciplina{

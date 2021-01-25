@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Server.csproj": {}
+    "C:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Server.csproj": {
+    "C:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Server.csproj",
+        "projectUniqueName": "C:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Server.csproj",
+        "projectPath": "C:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Server.csproj",
         "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\obj\\",
+        "outputPath": "C:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Server.csproj",
+  "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Server.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15603,83 +15603,83 @@
   "RootNamespace": "Server",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\DeleteUcesnik.cshtml",
-      "TargetPath": "Pages\\DeleteUcesnik.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\CreateTurnir.cshtml",
-      "TargetPath": "Pages\\CreateTurnir.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\UpdateUcesnik.cshtml",
-      "TargetPath": "Pages\\UpdateUcesnik.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\ViewDiscipline.cshtml",
-      "TargetPath": "Pages\\ViewDiscipline.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\UpdateDisciplina.cshtml",
-      "TargetPath": "Pages\\UpdateDisciplina.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\_Layout.cshtml",
-      "TargetPath": "Pages\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\CreateUcesnik.cshtml",
-      "TargetPath": "Pages\\CreateUcesnik.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\DeleteTurnir.cshtml",
-      "TargetPath": "Pages\\DeleteTurnir.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\ViewUcesnike.cshtml",
-      "TargetPath": "Pages\\ViewUcesnike.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\ViewUcesnikeDiscipline.cshtml",
-      "TargetPath": "Pages\\ViewUcesnikeDiscipline.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\CreateDisciplina.cshtml",
-      "TargetPath": "Pages\\CreateDisciplina.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\ViewTurniri.cshtml",
-      "TargetPath": "Pages\\ViewTurniri.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\DeleteDisciplina.cshtml",
-      "TargetPath": "Pages\\DeleteDisciplina.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\UpdateTurnir.cshtml",
-      "TargetPath": "Pages\\UpdateTurnir.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\Index.cshtml",
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat\\BackEnd\\Pages\\ViewDisciplineTurnira.cshtml",
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\DeleteDisciplina.cshtml",
+      "TargetPath": "Pages\\DeleteDisciplina.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\UpdateTurnir.cshtml",
+      "TargetPath": "Pages\\UpdateTurnir.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\ViewUcesnike.cshtml",
+      "TargetPath": "Pages\\ViewUcesnike.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\ViewDiscipline.cshtml",
+      "TargetPath": "Pages\\ViewDiscipline.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\ViewDisciplineTurnira.cshtml",
       "TargetPath": "Pages\\ViewDisciplineTurnira.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\_Layout.cshtml",
+      "TargetPath": "Pages\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\UpdateDisciplina.cshtml",
+      "TargetPath": "Pages\\UpdateDisciplina.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\DeleteTurnir.cshtml",
+      "TargetPath": "Pages\\DeleteTurnir.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\CreateTurnir.cshtml",
+      "TargetPath": "Pages\\CreateTurnir.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\CreateUcesnik.cshtml",
+      "TargetPath": "Pages\\CreateUcesnik.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\CreateDisciplina.cshtml",
+      "TargetPath": "Pages\\CreateDisciplina.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\DeleteUcesnik.cshtml",
+      "TargetPath": "Pages\\DeleteUcesnik.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\UpdateUcesnik.cshtml",
+      "TargetPath": "Pages\\UpdateUcesnik.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\ViewTurniri.cshtml",
+      "TargetPath": "Pages\\ViewTurniri.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\stefa\\Documents\\Faks\\III godina\\V semestar\\Web Programiranje\\Projekat - Copy (2)\\BackEnd\\Pages\\ViewUcesnikeDiscipline.cshtml",
+      "TargetPath": "Pages\\ViewUcesnikeDiscipline.cshtml",
       "FileKind": "mvc"
     }
   ],

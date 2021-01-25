@@ -71,49 +71,59 @@ export class Disciplina
         // Kontrola
         div = Help.napraviElement("div", this.container, "KontrolaDiscipline");
         const buttons = [];
-        ["Prikaži", "Automatska igra", "Regularna igra", "Resetuj"].forEach((el, ind) =>
+        ["Dodaj učesnika", "Prikaži", "Automatska igra", "Regularna igra", "Resetuj", "Obriši disciplinu"].forEach((el, ind) =>
         {
             buttons.push(Help.napraviElement("button", div))
             buttons[ind].innerHTML = el;
             buttons[ind].name = el;
         });
 
-        // Show/Hide button
-        buttons[0].onclick = ev =>
+        // Dodaj Učesnika dugme
+        buttons[0].onclick = () =>
         {
-            if (this.ucesnici.length < 1)
-                alert("Disciplina nema učesnike!");
-            else {
-                if (buttons[0].innerHTML == "Prikaži") {
-                    this.nacrtajStanje(hostUcesnici, col);
-                    buttons[0].innerHTML = "Sakrij";
-                    buttons[0].name = "Sakrij";
-                }
-                else {
-                    this.ucesnici.forEach(uc => uc.compete = false)
-                    // this.ucesnici.forEach(uc => uc.reset())
-                    Help.removeChildFromElement(hostUcesnici, this.ucesniciContainer);
-                    buttons[0].innerHTML = "Prikaži";
-                    buttons[0].name = "Prikaži";
-                    buttons[1].innerHTML = "Automatska igra";
-                    buttons[1].name = "Automatska igra";
-                    buttons[2].innerHTML = "Regularna igra";
-                    buttons[2].name = "Regularna igra";
-                }
-            }
+            const background = Help.napraviElement("div", document.body, "PopUpBackground");
+            const input = Help.napraviElement("div", background, "PopUp");
+            input.classList.add("TurnirUnosUcesnika");
+            document.body.style.overflow = "hidden";
+            this.nacrtajInputUcesnika(input);
         };
 
-        // Autoplay/Pause button
+        // Show/Hide button
         buttons[1].onclick = ev =>
         {
             if (this.ucesnici.length < 1)
                 alert("Disciplina nema učesnike!");
             else {
-                if (buttons[1].innerHTML == "Automatska igra") {
-                    buttons[0].innerHTML = "Sakrij";
-                    buttons[0].name = "Sakrij";
-                    buttons[1].innerHTML = "Pauziraj";
-                    buttons[1].name = "Pauziraj";
+                if (buttons[1].innerHTML == "Prikaži") {
+                    this.nacrtajStanje(hostUcesnici, col);
+                    buttons[1].innerHTML = "Sakrij";
+                    buttons[1].name = "Sakrij";
+                }
+                else {
+                    this.ucesnici.forEach(uc => uc.compete = false)
+                    // this.ucesnici.forEach(uc => uc.reset())
+                    Help.removeChildFromElement(hostUcesnici, this.ucesniciContainer);
+                    buttons[1].innerHTML = "Prikaži";
+                    buttons[1].name = "Prikaži";
+                    buttons[2].innerHTML = "Automatska igra";
+                    buttons[2].name = "Automatska igra";
+                    buttons[3].innerHTML = "Regularna igra";
+                    buttons[3].name = "Regularna igra";
+                }
+            }
+        };
+
+        // Autoplay/Pause button
+        buttons[2].onclick = ev =>
+        {
+            if (this.ucesnici.length < 1)
+                alert("Disciplina nema učesnike!");
+            else {
+                if (buttons[2].innerHTML == "Automatska igra") {
+                    buttons[1].innerHTML = "Sakrij";
+                    buttons[1].name = "Sakrij";
+                    buttons[2].innerHTML = "Pauziraj";
+                    buttons[2].name = "Pauziraj";
 
                     this.ucesnici.forEach(uc => uc.reset());
                     this.finish(null);
@@ -128,8 +138,8 @@ export class Disciplina
                     });
                 }
                 else {
-                    buttons[1].innerHTML = "Automatska igra";
-                    buttons[1].name = "Automatska igra";
+                    buttons[2].innerHTML = "Automatska igra";
+                    buttons[2].name = "Automatska igra";
                     this.ucesnici.forEach(uc => uc.compete = false)
                 }
             }
@@ -137,16 +147,16 @@ export class Disciplina
 
         // Regularplay/Pause button -> ukoliko korisnik krene da pritiska učesnika,
         // onda učesnik prestaje automatski da se kreće i korisnik ima kontrolu nad njim
-        buttons[2].onclick = ev =>
+        buttons[3].onclick = ev =>
         {
             if (this.ucesnici.length < 1)
                 alert("Disciplina nema učesnike!");
             else {
-                if (buttons[2].innerHTML == "Regularna igra") {
-                    buttons[0].innerHTML = "Sakrij";
-                    buttons[0].name = "Sakrij";
-                    buttons[2].innerHTML = "Obustavi";
-                    buttons[2].name = "Obustavi";
+                if (buttons[3].innerHTML == "Regularna igra") {
+                    buttons[1].innerHTML = "Sakrij";
+                    buttons[1].name = "Sakrij";
+                    buttons[3].innerHTML = "Obustavi";
+                    buttons[3].name = "Obustavi";
 
                     this.ucesnici.forEach(uc => uc.reset());
                     this.finish(null);
@@ -160,26 +170,35 @@ export class Disciplina
                     })
                 }
                 else {
-                    buttons[2].innerHTML = "Regularna igra";
-                    buttons[2].name = "Regularna igra";
+                    buttons[3].innerHTML = "Regularna igra";
+                    buttons[3].name = "Regularna igra";
                     this.ucesnici.forEach(uc => uc.compete = false);
                 }
             }
         };
 
         // Reset button
-        buttons[3].onclick = el =>
+        buttons[4].onclick = el =>
         {
             if (this.ucesnici.length < 1)
                 alert("Disciplina nema učesnike!");
             else {
-                buttons[1].innerHTML = "Automatska igra";
-                buttons[1].name = "Automatska igra";
-                buttons[2].innerHTML = "Regularna igra";
-                buttons[2].name = "Regularna igra";
+                buttons[2].innerHTML = "Automatska igra";
+                buttons[2].name = "Automatska igra";
+                buttons[3].innerHTML = "Regularna igra";
+                buttons[3].name = "Regularna igra";
                 this.ucesnici.forEach(uc => uc.reset());
                 this.finish(null); // setuje pobednika na null i šalje update bazi
             }
+        };
+
+        buttons[5].onclick = () =>
+        {
+            if (this.ucesniciContainer != null && this.ucesniciContainer.parentNode != null)
+                this.ucesniciContainer.parentNode.removeChild(this.ucesniciContainer);
+            if (this.container != null && this.container.parentNode != null)
+                this.container.parentNode.removeChild(this.container);
+            this.deleteDisciplina();
         };
     }
 
@@ -191,6 +210,56 @@ export class Disciplina
             label.innerHTML = `${ this.naziv }, ${ this.lokacija }, (${ this.ucesnici.length } /${ this.maxUcesnici }), Pobednik: ${ this.pobednik.ime } ${ this.pobednik.prezime }`;
         else
             label.innerHTML = `${ this.naziv }, ${ this.lokacija }, (${ this.ucesnici.length } /${ this.maxUcesnici })`;
+    }
+
+    // Crta deo za unos učesnika u disciplinu
+    nacrtajInputUcesnika(divUc /* - div u koji ispisujem formatiran inputUcesnika*/)
+    {
+        //const divUc = Help.napraviElement("div", divInput, "TurnirUnosUcesnika");
+
+        // Natpis
+        Help.napraviElement("h3", divUc).innerHTML = "Novi učesnik:";
+
+        // Input za podatke o učesniku
+        let input;
+        ["Ime", "Prezime", "Brzina"].forEach(el =>
+        {
+            input = Help.napraviElement("input", divUc);
+            input.name = el;
+            input.placeholder = el + " učesnika";
+            if (el == "Brzina") {
+                input.maxLength = 3;
+                input.type = "number";
+            }
+        })
+
+        // Dugme za dodavanje učesnika u disciplinu
+        const button = Help.napraviElement("button", divUc);
+        button.innerHTML = "Dodaj učesnika!";
+        button.name = "Dodaj učesnika!";
+        button.onclick = async el =>
+        {
+            const ime = divUc.querySelector("input[name='Ime']").value;
+            const prezime = divUc.querySelector("input[name='Prezime']").value;
+            const brzina = parseInt(divUc.querySelector("input[name='Brzina']").value);
+
+            const ucesnikID = await this.napraviNovogUcesnika(ime, prezime, brzina);
+            if (ucesnikID != 0) {
+                this.dodajUcesnika(new Ucesnik(ucesnikID, this.id, this.turnirID, ime, prezime, brzina));
+                document.body.style.overflow = "auto";
+                document.body.removeChild(button.parentNode.parentNode);
+                this.container.querySelector(".KontrolaDiscipline").querySelector("button[name='Resetuj']").click();
+            }
+        };
+
+        const buttonClose = Help.napraviElement("button", divUc, "closeButton");
+        buttonClose.innerHTML = "x";
+
+        buttonClose.onclick = () =>
+        {
+            document.body.style.overflow = "auto";
+            document.body.removeChild(buttonClose.parentNode.parentNode);
+        }
     }
 
     // Crta učesnike na disciplini
@@ -289,5 +358,49 @@ export class Disciplina
                 .then(er => console.log(er.message))
                 .catch(er => console.log(er));
         return null;
+    }
+
+    // Kreiranje novog učesnika u bazi ( vraća njegov id u bazi )
+    async napraviNovogUcesnika(ime, prezime, brzina)
+    {
+        var response = await fetch(`https://localhost:5001/Evidencija/CreateUcesnik/${ this.turnirID }/${ this.id }`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                ime: ime,
+                prezime: prezime,
+                brzina: brzina
+            })
+        });
+
+        if (response.ok) {
+            console.log("Uspešno napravljen novi učesnik");
+            let id = await response.json();
+            return id;
+        }
+        else {
+            response.json().then(error => alert(error.message));
+        }
+        return 0;
+    }
+
+    deleteDisciplina()
+    {
+        fetch(`https://localhost:5001/Evidencija/DeleteDisciplina/${ this.turnirID }/${ this.id }`,
+            {
+                method: "DELETE"
+            })
+            .then(response =>
+            {
+                if (response.ok)
+                    console.log("Uspešno uklonjena disciplina");
+                else
+                    response.json()
+                        .then(er => console.log(er.message))
+                        .catch(error => console.log("error unpacking json " + error));
+            })
+            .catch(error => console.log("error unpacking response " + error));
     }
 }
